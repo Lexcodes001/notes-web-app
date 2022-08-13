@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LexNotes</title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="body">
+            
+            <div class="topnav">
+                <div><span class="material-icons">menu</span></div>
+                <div class="name">LexNotes</div>
+                <div class="topnav-left">
+                    <span class="material-icons">facebook</span>
+                    <span class="material-icons">whatsapp</span>
+                    <span><input type="checkbox" id="toggle">
+                    <label for="toggle" class="button"></label></span>
+                </div>
+            </div>
+
+            <div id="bodycontent">
+                <div id="notes">notes</div>
+                <div id="todolist">todolist</div>
+            </div>
+
+            <div class="bottomnav">
+                <div>
+                    <button onclick="displayNotes()" class="bottomnav-one ">Notes<button/>
+                </div>
+                <div>
+                    <button onclick="displayTodolist()" class="bottomnav-two">To-Do List<button/>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>

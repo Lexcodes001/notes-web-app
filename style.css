@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/**:root{
+    --
+    --
+    --
+    --
+    --
+    --;
+}**/
+
+.body{
+    width: 100vh;
+    height: 100vh;
+}
+
+.topnav{
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.topnav-left{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+
+#toggle{
+    width: ;
+
+}
+
+.bottomnav{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.bottomnav-one, .bottomnav-two{
+    border: none;
+}
