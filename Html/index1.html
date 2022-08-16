@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>LexNotes</title>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/Css/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     </head>
@@ -14,10 +14,10 @@
             
             <div class="topnav">
                 <div><span class="material-icons">menu</span></div>
-                <div class="name">LexNotes</div>
+                <div id="topnav-name"></div>
                 <div class="topnav-left">
                     <span class="material-icons">facebook</span>
-                    <span class="material-icons">whatsapp</span>
+                    <span ><img class="icon" src="/Images/whatsapp-icon.png" alt="whatsapp icon" /></span>
                     <span><input type="checkbox" id="toggle">
                     <label for="toggle" class="button"></label></span>
                 </div>
@@ -28,16 +28,18 @@
                 <div id="todolist">todolist</div>
             </div>
 
-            <div class="bottomnav">
-                <div>
-                    <button onclick="displayNotes()" class="bottomnav-one ">Notes<button/>
+            <div class="bottomnav-container">
+                <div onclick="displayNotes()" class="bottomnav-left">
+                    Notes
                 </div>
-                <div>
-                    <button onclick="displayTodolist()" class="bottomnav-two">To-Do List<button/>
+                <div onclick="displayTodolist()" class="bottomnav-right">
+                    To-Do List
                 </div>
             </div>
         </div>
 
-        <script src="/script.js"></script>
+        <script src="/Js/toggle.js"></script>
+        <script src="/Js/getName.js"></script>
+        <script src="/Js/actions.js"></script>
     </body>
 </html>
