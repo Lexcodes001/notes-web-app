@@ -1,11 +1,10 @@
 var nameCnt = document.getElementById('name-cnt');
 var grts = document.getElementById('grts');
 var btnOne = document.getElementById('btn-one');
-var btnTwo = document.getElementById('btn-two');
-var input = document.getElementById('name');
-var btnCtn = document.getElementById('btn-ctn');
+var nameForm = document.getElementById('name-form');
+var btnCtn = document.getElementById('btn-cnt');
 btnOne.addEventListener("click", getName);
-btnTwo.addEventListener("click", goToPage);
+var btnTwo = document.getElementById('btn-two');
 
 function getName() {
     var getName = document.getElementById('name').value.trim();
@@ -16,8 +15,8 @@ function getName() {
     } else {
         grts.innerHTML = `Welcome here ${userName}!`;
     }
-    input.style.display = 'none';
-    var secondBtn = `<button id="btn-two" type="submit">Next</button>`;
+    nameForm.style.display = 'none';
+    var secondBtn = `<button onclick= "goToPage()" id="btn-two" type="submit">Next</button>`;
     btnCtn.innerHTML = secondBtn;
 }
 
@@ -38,7 +37,7 @@ function goToPage() {
             </div>
         </div>
 
-        <div class="topnav-middle">${userName}</div>
+        <div class="topnav-middle">Hi ${userName}!</div>
 
         <div class="topnav-right">
             <span class="material-icons">facebook</span>

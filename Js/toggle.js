@@ -1,16 +1,20 @@
-var size = 8;
+var getNotes = document.getElementById('notes');
+var getTodolist = document.getElementById('todolist');
 
-var board = '';
-
-for (let y = 0; y < size; y++) {
-    for (let x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0) {
-        board += ' ';
-    } else {
-        board += '#';
-    }
-    board += '/n';
-    }
-    console.log(board);
+function displayNotes() {
+    getNotes.style.display = 'block';
+    getTodolist.style.display = 'none';
 }
 
+function displayTodolist() {
+    getNotes.style.display = 'none';
+    getTodolist.style.display = 'block';
+}
+
+var toggle = document.getElementById('toggle');
+
+if (toggle.checked == true) {
+    
+} else {
+    
+}
