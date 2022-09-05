@@ -2,7 +2,8 @@ var nameCnt = document.getElementById('name-cnt');
 var grts = document.getElementById('grts');
 var btnOne = document.getElementById('btn-one');
 var btnTwo = document.getElementById('btn-two');
-btnTwo.style.visibility = 'hidden';
+var input = document.getElementById('name');
+var btnCtn = document.getElementById('btn-ctn');
 btnOne.addEventListener("click", getName);
 btnTwo.addEventListener("click", goToPage);
 
@@ -15,9 +16,9 @@ function getName() {
     } else {
         grts.innerHTML = `Welcome here ${userName}!`;
     }
-    nameCnt.style.display = 'none';
-    btnOne.style.display = 'none';
-    btnTwo.style.visibility = 'visible';
+    input.style.display = 'none';
+    var secondBtn = `<button id="btn-two" type="submit">Next</button>`;
+    btnCtn.innerHTML = secondBtn;
 }
 
 function goToPage() {
