@@ -29,10 +29,10 @@ function goToPage() {
             
     <div class="topnav">
         <div class="topnav-left">
-            <div onclick="displayNotes()" class="topnav-left-item">
+            <div id="notes-btn" class="topnav-left-item">
                 Notes
             </div>
-            <div onclick="displayTodolist()" class="topnav-left-item">
+            <div id="todolist-btn" class="topnav-left-item">
                 To-Do List
             </div>
         </div>
