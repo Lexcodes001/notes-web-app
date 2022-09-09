@@ -1,58 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
-/**:root{
-    --
-    --
-    --
-    --
-    --
-    --;
-}**/
-
-.body{
-    margin: 0;
-    width: 100%;
-    height: 100vh;
+:root{
+    --bg: #f3f3f8;
+    --box: #fff;
+    --header: #777;
+    --txt: #999;
+    --btn: #666;
 }
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection{
+    color: var(--box);
+    background: var(--btn);
+}
+
+body{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+/*.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}*/
+
 
 .topnav{
     top: 0;
+    z-index: 1;
+    background-color: var(--box);
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .topnav-left{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 1rem;
 }
 
 .topnav-left-item{
     border: none;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 2rem;
+    color: var(--txt);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: auto;
     height: auto;
     font-family: Montserrat, 'Sans-Serif';
     border-radius: .15rem;
+    transition: font-size 1s ease, opacity 1s ease;
+}
+
+.topnav-middle{
+    display: none;
+}
+
+.clicked{
+    color: var(--header);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.opq{
+    opacity: .5;
 }
 
 .topnav-right{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-.icon{
-    width: 1.21rem;
+i, .icons{
+    display: none;
+}
+
+.body-content{
+    width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-#toggle{
-    width: ;
-
+#img{
+    width: 15rem;
+    height: 15rem;
+    margin: 10rem;
 }
 
+#notes, #todolist{
+    display: none;
+}
+
+@media only screen and (min-width: 660px) {
+.topnav{
+    justify-content: space-between;
+}
+
+.topnav-left{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.topnav-middle{
+    display: flex;
+    color: var(--header);
+    font-size: medium;
+    font-weight: bold; 
+    font-family: Montserrat, 'Sans-Serif';
+}
+
+.topnav-right {
+    flex-direction: row;
+    padding-right: 2rem;
+}
+
+.topnav-right-item {
+    padding-right: 1.5rem;
+}
+
+i, .icon{
+    display: flex;
+    color: var(--header);
+}
+
+}
