@@ -244,7 +244,7 @@ form .bttn{
     transform: scale(0.9);
 }
 
-@media (min-width: 660px){
+@media (min-width: 769px){
   .wrapper{
     /*margin: auto;
     flex-flow: row nowrap;
