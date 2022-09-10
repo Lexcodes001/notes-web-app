@@ -1,4 +1,4 @@
-var hour, care, ans, grts = document.getElementById('grts');
+var hour, care, ans, grts = document.getElementById('grts'), respGuide = document.getElementById('respGuide');
 const currentDate = new Date();
 const currentHour = currentDate.getHours();
 if (currentHour <= 11) {
@@ -13,6 +13,7 @@ if (currentHour <= 11) {
     }
     
 if (window.innerWidth > 768) {
+    respGuide.innerHTML = 'are links to my social media pages (Please follow me!😊🙏) and';
     ans = prompt('Please enter your name:', '');
     if (ans == null || ans == '') {
         text = `${hour} Buddy!`;
