@@ -12,7 +12,7 @@ if (currentHour <= 11) {
     care = 'Have a good night rest!';
     }
     
-if (window.innerWidth > 660) {
+if (window.innerWidth > 768) {
     ans = prompt('Please enter your name:', '');
     if (ans == null || ans == '') {
         text = `${hour} Buddy!`;
@@ -60,7 +60,7 @@ function displayNotes() {
     firstDisplay.style.display = 'none';
     getNotes.style.display = 'block';
     getTodolist.style.display = 'none';
-    if (window.innerWidth < 660) {
+    if (window.innerWidth < 769) {
         getNotes.style.marginTop = '6.5rem';
     } else {
         getNotes.style.margin = '5rem';
@@ -75,7 +75,7 @@ function displayToDoList() {
     firstDisplay.style.display = 'none';
     getTodolist.style.display = 'block';
     getNotes.style.display = 'none';
-    if (window.innerWidth < 660) {
+    if (window.innerWidth < 769) {
         getTodolist.style.margin = 'auto';
     } else{
         getTodolist.style.margin = 'auto';
