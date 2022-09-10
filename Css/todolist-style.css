@@ -203,7 +203,7 @@
   padding-right: .8rem;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 769px) {
   .container{
     padding: 28px 0 30px;
   }
