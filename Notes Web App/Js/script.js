@@ -13,15 +13,15 @@ if (currentHour <= 11) {
     }
     
 if (window.innerWidth > 660) {
-    ans = prompt('Please enter your name:', '');
+    //ans = prompt('Please enter your name:', '');
     if (ans == null || ans == '') {
         text = `${hour} Buddy!`;
     } else {
         text = `${hour} ${ans}!`;
     }
-    var i = 0, speed = 250;
+    var i = 0, speed = 400;
     function typingEffect() {
-        if (i <= text.length) {
+        if (i < text.length) {
             grts.innerHTML += text.charAt(i);
             i++;
             setTimeout(typingEffect, speed);

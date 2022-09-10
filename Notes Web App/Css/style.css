@@ -68,12 +68,12 @@ body{
     height: auto;
     font-family: Montserrat, 'Sans-Serif';
     border-radius: .15rem;
-    transition: font-size .5s ease, opacity .5s ease;
+    transition: font-size 1s ease, opacity 1s ease;
 }
 
 .topnav-middle{
     display: none;
-    cursor: default;
+    cursor: none;
 }
 
 .clicked{
@@ -112,8 +112,8 @@ i{
 
 .welcome-page{
     width: 100%;
-    height: 100%;
-    padding: 5rem 3rem 2rem;
+    height: 100vh;
+    padding: 5rem 3rem 0;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -121,33 +121,21 @@ i{
 }
 
 .welcome-page img{
-    width: 100vh;
+    width: 100%;
     height: auto;
 }
 
 .guide{
     color: var(--header);
-    font-size: 3vh;
+    font-size: medium;
     font-weight: bold; 
     font-family: Montserrat, 'Sans-Serif';
-    text-align: center;
+    text-align: justify;
 }
 
 #notes, #todolist{
     display: none;
 }
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    margin: auto;
-    padding: 0 0 .3rem .3rem;
-    text-align: center;
-    font-size: 2vh;
-    font-weight: bolder;
-    color: var(--txt);
-    opacity: .5;
- }
 
 @media only screen and (min-width: 660px) {
 .topnav{
@@ -198,27 +186,13 @@ i, .icon{
 
 .welcome-page{
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin: auto;
     padding: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.welcome-page img{
-    width: 100%;
-    height: auto;
-}
-
-.guide{
-    text-align: left;
-}
-
-.footer{
-    font-size: 3vh;
-    padding: 0 0 .5rem .5rem;
 }
 
 }

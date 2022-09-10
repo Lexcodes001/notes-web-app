@@ -1,0 +1,52 @@
+:root{
+    --bg: #f3f3f9;
+    --box: #fff;
+    --header: #777;
+    --txt: #999;
+    --btn: #666;
+}
+
+#toggle{
+    display: none;
+}
+
+.button{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    background-color: var(--bg);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .20);
+}
+
+.button::after{
+    font-family: Montserrat, 'Sans-Serif';
+    font-size: 1.3rem;
+    font-weight: bolder;
+    content: "☀️";
+    color: var(--header);
+    width: 30px;
+    height: 30px;
+    background-color: var(--btn);
+    border: 1px solid var(--bg);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .20);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    transition: background-color .8s, transform .8s ease-in-out;
+}
+
+input:checked + .button::after{
+    font-family: Montserrat, 'Sans-Serif';
+    font-size: 1.3rem;
+    font-weight: bolder;
+    content: "🌙";
+    background-color: var(--btn);
+    transform: translateX(40px) rotate(360deg);
+}
