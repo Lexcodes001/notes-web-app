@@ -88,8 +88,6 @@ window.onload = () => {
     if (currentHour > 16) {
         themeToggle.click();
     }
-    //getNotes.style.display = 'none';
-    //getTodolist.style.display = 'none';
 }
 
 const themeToggle = document.querySelector('#toggle');
