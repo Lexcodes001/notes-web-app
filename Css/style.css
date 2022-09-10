@@ -127,10 +127,14 @@ i{
 
 .guide{
     color: var(--header);
-    font-size: normal;
+    font-size: medium;
     font-weight: bold; 
     font-family: Montserrat, 'Sans-Serif';
     text-align: center;
+}
+
+.guide .resp-guide{
+    text-decoration: underline;
 }
 
 #notes, #todolist{
