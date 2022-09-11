@@ -38,7 +38,6 @@ if (window.innerWidth > 768) {
             i++;
             setTimeout(typeEffect, speed);
         } else {
-            //grts.innerHTML += '&nbsp';
             grts.innerText = '';
             i = 0;
             typingEffect();
@@ -84,8 +83,7 @@ function displayToDoList() {
     }
     
 window.onload = () => {
-    illustration.style.display = 'flex';
-    if (currentHour > 16) {
+    if (currentHour > 16 || currentHour < 6) {
         themeToggle.click();
     }
 }
